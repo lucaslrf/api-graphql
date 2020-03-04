@@ -1,5 +1,5 @@
 # api-graphql
-Api em Laravel com GraphQL pré configurada com autenticação
+Api GraphQL em Laravel pré configurada com autenticação
 
 <p style="text-align: center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
@@ -27,8 +27,6 @@ Se atente bem nos links acima e na documentação de cada um. Cada repositório 
 
 Você vai precisar testar suas queries e mutations do Graphql, você pode utilizar um que o repositório <a href="https://github.com/joselfonseca/lighthouse-graphql-passport-auth">Laravel Passport Graphql</a> indica, que é o Graphql Playground, ou o <a href="https://www.electronjs.org/apps/graphiql">GraphiQL</a> que pode ser instalado no Desktop. Existem outros, mas conheço esses dois que podem auxiliar. Eu uso o GraphiQL porque gosto dele e da praticidade que tive no primeiro contato, o Graphql Playground nunca usei.
 
-<p> ------------ Como Usar ------------ </p>
-
 ## Arquivo .env
 Executar o comando
 
@@ -38,16 +36,15 @@ Use o php artisan key:generate para gerar a chave do APP_KEY
 
 As configurações do banco de dados deve ser de acordo com as configurações do banco local
 
-...
- 
+```
  DB_CONNECTION=mysql
  DB_HOST=127.0.0.1
  DB_PORT=3306 (a porta onde o bd mysql está configurado)
  DB_DATABASE=seudatabase
  DB_USERNAME=seuusuario
  DB_PASSWORD=seupassword (se for vazio deixe sem nada)
- 
-...
+
+```
 
 ## Comandos para inicialização do projeto
 composer install
